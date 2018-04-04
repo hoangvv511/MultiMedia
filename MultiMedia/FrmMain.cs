@@ -61,6 +61,10 @@ namespace MultiMedia
                 Sidemenu.Width = 80;
                 btnMenu.Location = new Point(20, 58);
                 PanelAnimation2.ShowSync(Sidemenu);
+
+                //test git
+
+
             }
         }
     }
