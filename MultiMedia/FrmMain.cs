@@ -15,8 +15,10 @@ namespace MultiMedia
         public FrmMain()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.WindowState = FormWindowState.Maximized;
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -63,7 +65,7 @@ namespace MultiMedia
                 PanelAnimation2.ShowSync(Sidemenu);
             }
 
-
+            
             //Test master
         }
     }
