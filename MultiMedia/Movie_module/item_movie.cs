@@ -15,6 +15,17 @@ namespace MultiMedia
         public item_movie()
         {
             InitializeComponent();
+
+        }
+
+        private void item_movie_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name_movie_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
