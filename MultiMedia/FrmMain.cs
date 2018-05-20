@@ -71,7 +71,7 @@ namespace MultiMedia
 
         }
 
-        private void bunifuFlatButton3_Click(object sender, EventArgs e) // radio
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
 
         }
