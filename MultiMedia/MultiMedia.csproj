@@ -107,6 +107,9 @@
     <EmbeddedResource Include="Radio.resx">
       <DependentUpon>Radio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TV.resx">
+      <DependentUpon>TV.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -157,6 +160,135 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animalplanet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binhdinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\binhphuoc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-toon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discovery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dulich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giadinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hatinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv7hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htv9hd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\htvthethao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kiengiang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khanhhoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamdong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\langson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\longan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mtvviet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phimhd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phunu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quangnam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soctrang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tayninh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tpcantho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thuanviethd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\travinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vinhlong1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vinhlong2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vtc16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

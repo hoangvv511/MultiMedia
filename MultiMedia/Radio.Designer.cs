@@ -57,6 +57,7 @@
             // 
             // btnVov1
             // 
+            this.btnVov1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov1.Location = new System.Drawing.Point(52, 80);
             this.btnVov1.Name = "btnVov1";
             this.btnVov1.Size = new System.Drawing.Size(75, 23);
@@ -67,6 +68,7 @@
             // 
             // btnVov3
             // 
+            this.btnVov3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov3.Location = new System.Drawing.Point(214, 80);
             this.btnVov3.Name = "btnVov3";
             this.btnVov3.Size = new System.Drawing.Size(75, 23);
@@ -77,6 +79,7 @@
             // 
             // btnVov4
             // 
+            this.btnVov4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov4.Location = new System.Drawing.Point(295, 80);
             this.btnVov4.Name = "btnVov4";
             this.btnVov4.Size = new System.Drawing.Size(75, 24);
@@ -87,6 +90,7 @@
             // 
             // btnVov5
             // 
+            this.btnVov5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov5.Location = new System.Drawing.Point(376, 81);
             this.btnVov5.Name = "btnVov5";
             this.btnVov5.Size = new System.Drawing.Size(75, 23);
@@ -97,6 +101,7 @@
             // 
             // btnVov63
             // 
+            this.btnVov63.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov63.Location = new System.Drawing.Point(52, 122);
             this.btnVov63.Name = "btnVov63";
             this.btnVov63.Size = new System.Drawing.Size(75, 23);
@@ -107,6 +112,7 @@
             // 
             // btnVovTG_HN
             // 
+            this.btnVovTG_HN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVovTG_HN.Location = new System.Drawing.Point(133, 122);
             this.btnVovTG_HN.Name = "btnVovTG_HN";
             this.btnVovTG_HN.Size = new System.Drawing.Size(108, 23);
@@ -117,6 +123,7 @@
             // 
             // btnVovGT_TPHCM
             // 
+            this.btnVovGT_TPHCM.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVovGT_TPHCM.Location = new System.Drawing.Point(247, 122);
             this.btnVovGT_TPHCM.Name = "btnVovGT_TPHCM";
             this.btnVovGT_TPHCM.Size = new System.Drawing.Size(109, 23);
@@ -127,6 +134,7 @@
             // 
             // btnEnglish
             // 
+            this.btnEnglish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEnglish.Location = new System.Drawing.Point(362, 122);
             this.btnEnglish.Name = "btnEnglish";
             this.btnEnglish.Size = new System.Drawing.Size(89, 23);
@@ -137,6 +145,7 @@
             // 
             // btnVov2
             // 
+            this.btnVov2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVov2.Location = new System.Drawing.Point(133, 80);
             this.btnVov2.Name = "btnVov2";
             this.btnVov2.Size = new System.Drawing.Size(75, 23);
@@ -189,7 +198,7 @@
             this.Controls.Add(this.btnVov1);
             this.Controls.Add(this.axVLCPlugin);
             this.Name = "Radio";
-            this.Size = new System.Drawing.Size(882, 506);
+            this.Size = new System.Drawing.Size(1000, 700);
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin)).EndInit();
             this.ResumeLayout(false);
 
