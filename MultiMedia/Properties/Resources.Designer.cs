@@ -183,7 +183,7 @@ namespace MultiMedia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tv2 {
+        internal static System.Drawing.Bitmap red {
             get {
                 object obj = ResourceManager.GetObject("tv2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));

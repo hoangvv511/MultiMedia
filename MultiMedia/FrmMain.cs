@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HtmlAgilityPack;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace MultiMedia
     public partial class FrmMain : Form
     {
         public FrmMain()
-        {
+        { 
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
@@ -64,9 +65,6 @@ namespace MultiMedia
                 btnMenu.Location = new Point(20, 58);
                 PanelAnimation2.ShowSync(Sidemenu);
             }
-
-            
-            //Test master
         }
       
     }
