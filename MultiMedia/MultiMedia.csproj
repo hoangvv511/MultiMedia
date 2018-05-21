@@ -72,12 +72,21 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxInterop.AXVLC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AxInterop.AXVLC.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="HtmlAgilityPack, Version=1.8.2.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>..\packages\HtmlAgilityPack.1.8.2\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AXVLC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>.\Interop.AXVLC.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -104,6 +113,10 @@
     </Reference>
     <Reference Include="Vlc.DotNet.Forms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
       <HintPath>..\packages\Vlc.DotNet.Forms.2.2.1\lib\net45\Vlc.DotNet.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="YoutubeSearch, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\YoutubeSearch.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -143,11 +156,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Youtube\Video.cs" />
-    <Compile Include="Youtube\Youtube.cs">
+    <Compile Include="Youtube\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Youtube\UserControl1.Designer.cs">
-      <DependentUpon>Youtube.cs</DependentUpon>
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
@@ -200,17 +213,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\red.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="AXVLC">
-      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

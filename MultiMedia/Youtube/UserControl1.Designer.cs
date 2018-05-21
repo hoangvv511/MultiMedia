@@ -47,24 +47,27 @@
             // 
             this.axVLCPlugin21.Enabled = true;
             this.axVLCPlugin21.Location = new System.Drawing.Point(16, 12);
+            this.axVLCPlugin21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.axVLCPlugin21.Name = "axVLCPlugin21";
             this.axVLCPlugin21.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axVLCPlugin21.OcxState")));
-            this.axVLCPlugin21.Size = new System.Drawing.Size(691, 546);
+            this.axVLCPlugin21.Size = new System.Drawing.Size(516, 442);
             this.axVLCPlugin21.TabIndex = 0;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(715, 12);
+            this.txtSearch.Location = new System.Drawing.Point(536, 10);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(337, 22);
+            this.txtSearch.Size = new System.Drawing.Size(254, 20);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1059, 12);
+            this.btnSearch.Location = new System.Drawing.Point(794, 10);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(56, 19);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -80,10 +83,11 @@
             this.titleDataGridViewTextBoxColumn,
             this.urlDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.videoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(715, 40);
+            this.dataGridView1.Location = new System.Drawing.Point(536, 32);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(419, 519);
+            this.dataGridView1.Size = new System.Drawing.Size(314, 422);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -112,15 +116,16 @@
             // 
             // UserControl1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.axVLCPlugin21);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(1160, 577);
+            this.Size = new System.Drawing.Size(870, 469);
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.videoBindingSource)).EndInit();
