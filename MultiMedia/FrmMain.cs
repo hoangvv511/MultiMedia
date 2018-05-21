@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,10 +15,8 @@ namespace MultiMedia
         public FrmMain()
         {
             InitializeComponent();
-            System.Drawing.Rectangle rect = Screen.GetWorkingArea(this);
-            //this.MaximizedBounds = Screen.GetWorkingArea(this);
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-
         }
         
         private void label1_Click(object sender, EventArgs e)
@@ -68,8 +65,8 @@ namespace MultiMedia
                 PanelAnimation2.ShowSync(Sidemenu);
             }
 
-
-           
+            
+            //Test master
         }
       
     }
