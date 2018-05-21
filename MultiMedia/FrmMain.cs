@@ -149,6 +149,11 @@ namespace MultiMedia
             return path;
         }
 
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //private void FrmMain_Load(object sender, EventArgs e)
         //{
         //    // Step 1: Cut the label regions (seems to be ok, result is the same for both labels)
@@ -156,7 +161,7 @@ namespace MultiMedia
         //    label1.Region = new Region(graphicsPath);
         //    graphicsPath = _getRoundPath(label2.ClientRectangle, _cornerRadius);
         //    label2.Region = new Region(graphicsPath);
-      
+
         //    _locationLabel2 = this.PointToClient(label2.Parent.PointToScreen(label2.Location));
         //}
     }

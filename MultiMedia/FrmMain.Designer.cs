@@ -45,9 +45,9 @@
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PanelAnimation = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.movie1 = new MultiMedia.Movie();
             this.PanelAnimation2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.movie1 = new MultiMedia.Movie();
             this.Sidemenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -158,6 +158,7 @@
             this.bunifuFlatButton6.IconZoom = 120D;
             this.bunifuFlatButton6.IsTab = false;
             this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 608);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.Black;
@@ -195,7 +196,7 @@
             this.bunifuFlatButton5.IconZoom = 100D;
             this.bunifuFlatButton5.IsTab = false;
             this.bunifuFlatButton5.Location = new System.Drawing.Point(0, 521);
-            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton5.Name = "bunifuFlatButton5";
             this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.Black;
@@ -233,7 +234,7 @@
             this.bunifuFlatButton4.IconZoom = 100D;
             this.bunifuFlatButton4.IsTab = false;
             this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 430);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.Black;
@@ -271,7 +272,7 @@
             this.bunifuFlatButton3.IconZoom = 110D;
             this.bunifuFlatButton3.IsTab = false;
             this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 336);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton3.Name = "bunifuFlatButton3";
             this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Black;
@@ -309,7 +310,7 @@
             this.bunifuFlatButton2.IconZoom = 110D;
             this.bunifuFlatButton2.IsTab = false;
             this.bunifuFlatButton2.Location = new System.Drawing.Point(0, 244);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.Black;
@@ -325,7 +326,7 @@
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "       Cinema";
@@ -347,7 +348,7 @@
             this.bunifuFlatButton1.IconZoom = 110D;
             this.bunifuFlatButton1.IsTab = false;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 150);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Black;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Black;
@@ -359,6 +360,7 @@
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuDragControl1
             // 
@@ -388,6 +390,18 @@
             animation2.TransparencyCoeff = 0F;
             this.PanelAnimation.DefaultAnimation = animation2;
             // 
+            // movie1
+            // 
+            this.movie1.AutoSize = true;
+            this.PanelAnimation.SetDecoration(this.movie1, BunifuAnimatorNS.DecorationType.None);
+            this.PanelAnimation2.SetDecoration(this.movie1, BunifuAnimatorNS.DecorationType.None);
+            this.movie1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.movie1.Location = new System.Drawing.Point(300, 0);
+            this.movie1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.movie1.Name = "movie1";
+            this.movie1.Size = new System.Drawing.Size(1000, 800);
+            this.movie1.TabIndex = 1;
+            // 
             // PanelAnimation2
             // 
             this.PanelAnimation2.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind;
@@ -413,17 +427,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // movie1
-            // 
-            this.movie1.AutoSize = true;
-            this.PanelAnimation.SetDecoration(this.movie1, BunifuAnimatorNS.DecorationType.None);
-            this.PanelAnimation2.SetDecoration(this.movie1, BunifuAnimatorNS.DecorationType.None);
-            this.movie1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.movie1.Location = new System.Drawing.Point(300, 0);
-            this.movie1.Name = "movie1";
-            this.movie1.Size = new System.Drawing.Size(1000, 800);
-            this.movie1.TabIndex = 1;
             // 
             // FrmMain
             // 
