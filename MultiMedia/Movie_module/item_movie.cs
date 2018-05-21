@@ -27,5 +27,10 @@ namespace MultiMedia
         {
 
         }
+
+        private void btn_avatar_Click(object sender, EventArgs e)
+        {
+                  
+        }
     }
 }
