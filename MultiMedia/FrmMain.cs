@@ -87,7 +87,7 @@ namespace MultiMedia
                 OverrideEncoding = Encoding.UTF8  //Set UTF8 để hiển thị Tiếng Việt
             };
             htmlWeb.UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36";
-
+        
             //radio2.axVLCPlugin.playlist.add("http://talk2.vcdn.vn/hls/c913e93833d3fa1aff0fca6ffe9f2d33/162d29f55cd/htvbch/index.m3u8");
             string _url = "https://vov.vn/RadioPlayer.aspx?c=vov1";
             HtmlAgilityPack.HtmlDocument document = htmlWeb.Load(_url);
