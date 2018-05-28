@@ -20,6 +20,8 @@ namespace MultiMedia
             //this.MaximizedBounds = Screen.GetWorkingArea(this);
             this.WindowState = FormWindowState.Maximized;
 
+
+
         }
         
         private void label1_Click(object sender, EventArgs e)
@@ -66,10 +68,7 @@ namespace MultiMedia
                 Sidemenu.Width = 80;
                 btnMenu.Location = new Point(20, 58);
                 PanelAnimation2.ShowSync(Sidemenu);
-            }
-
-
-           
+            }          
         }
       
     }
