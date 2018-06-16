@@ -35,7 +35,8 @@ namespace MultiMedia.Movie_module
         public FrmVLC(String url)
         {
             InitializeComponent();
-            for(int i =0; i < axVLCPlugin21.playlist.itemCount; i++)
+            isFullScreen = false;
+            for(int i = 0; i < axVLCPlugin21.playlist.itemCount; i++)
             {
                 axVLCPlugin21.playlist.items.remove(i);
             }
@@ -118,14 +119,32 @@ namespace MultiMedia.Movie_module
 
         private void btn_fullscreen_Click(object sender, EventArgs e)
         {
-            System.Drawing.Rectangle rect = Screen.GetWorkingArea(this);
-            //this.MaximizedBounds = Screen.GetWorkingArea(this);
-            this.WindowState = FormWindowState.Maximized;
+            if(!isFullScreen)
+            {
+                System.Drawing.Rectangle rect = Screen.GetWorkingArea(this);
+                //this.MaximizedBounds = Screen.GetWorkingArea(this);
+                this.WindowState = FormWindowState.Maximized;
+                isFullScreen = true;
+            }
+            //else
+            //{
+            //    this.WindowState = FormWindowState.Normal;
+            //    isFullScreen = false;
+            //}
+       
         }
+
+
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_fullscreen_DoubleClick(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            isFullScreen = false;
         }
     }
 }

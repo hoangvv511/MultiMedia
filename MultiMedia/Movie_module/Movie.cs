@@ -35,17 +35,13 @@ namespace MultiMedia
             btn_back.Visible = false;
         }
 
-        private void btn_timkiem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
 
         public void LoadFilm(String url)
         {
             while (flowLayoutPanel1.Controls.Count > 0) flowLayoutPanel1.Controls.RemoveAt(0);
             try
             {
+                list_itemmovies.Clear();
                 detail.Clear();
                 realname.Clear();
                 avatar.Clear();
@@ -61,8 +57,16 @@ namespace MultiMedia
                 HtmlAgilityPack.HtmlDocument document = htmlWeb.Load(url);
                 //Lay so luong trang phim
                 HtmlNode Soluongphim = document.DocumentNode.SelectSingleNode("//div[@class='page-navigation']/span");
-                currentPage = Convert.ToInt32(Soluongphim.SelectSingleNode(@"a[@class='item current']").InnerText);
-                MaxPage = Convert.ToInt32(Soluongphim.SelectSingleNode(@"a[last()-1]").InnerText);
+                try
+                {
+                    currentPage = Convert.ToInt32(Soluongphim.SelectSingleNode(@"a[@class='item current']").InnerText);
+                    MaxPage = Convert.ToInt32(Soluongphim.SelectSingleNode(@"a[last()-1]").InnerText);
+                }
+                catch
+                {
+                    currentPage = MaxPage = 1;
+                }
+                
 
                 lbl_sotrang.Text = currentPage + " / " + MaxPage;
                 if (currentPage <= 1)
@@ -272,11 +276,11 @@ namespace MultiMedia
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            if (url.IndexOf("keyword") != -1)
+            if (url.IndexOf("tim-kiem-phim") != -1)
             {
-                url = "http://phimvnz.com/tim-kiem?keyword=" + search2 + "&page=" + (currentPage - 1);
+                url = "http://www.vtv16.com/tim-kiem-phim/" + search2 + "?page=2" + (currentPage - 1);
 
-                //LoadFilmSearch(url);
+                LoadFilm(url);
             }
             else if (currentPage < 1)
             {
@@ -292,11 +296,11 @@ namespace MultiMedia
 
         private void btn_forward_Click(object sender, EventArgs e)
         {
-            if(url.IndexOf("keyword") != -1)
+            if(url.IndexOf("tim-kiem-phim") != -1)
             {
-                url = "http://phimvnz.com/tim-kiem?keyword=" + search2 + "&page=" + (currentPage + 1);
+                url = "http://www.vtv16.com/tim-kiem-phim/" + search2 + "?page=2" + (currentPage + 1);
 
-                //LoadFilmSearch(url);
+                LoadFilm(url);
             }
             else if(currentPage > MaxPage)
             { 
@@ -319,11 +323,11 @@ namespace MultiMedia
             String search = tb_timkiem.Text.ToString();
             if (search != null)
             {
-                search2 = search.Replace(" ", "+");
+                search2 = search.Replace(" ", "-");
 
-                url = "http://phimvnz.com/tim-kiem?keyword=" + search2;
+                url = "http://www.vtv16.com/tim-kiem-phim/" + search2;
 
-                //LoadFilmSearch(url);
+                LoadFilm(url);
             }
             else
             {

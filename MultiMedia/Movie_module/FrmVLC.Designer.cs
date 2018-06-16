@@ -34,33 +34,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.time_movie = new Bunifu.Framework.UI.BunifuSlider();
+            this.volume = new Bunifu.Framework.UI.BunifuSlider();
+            this.lbl_maxtime = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbl_currenttime = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.axVLCPlugin21 = new AxAXVLC.AxVLCPlugin2();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_play = new Bunifu.Framework.UI.BunifuImageButton();
-            this.lbl_currenttime = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lbl_maxtime = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.volume = new Bunifu.Framework.UI.BunifuSlider();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btn_fullscreen = new Bunifu.Framework.UI.BunifuImageButton();
-            this.time_movie = new Bunifu.Framework.UI.BunifuSlider();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_play = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_play)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_fullscreen)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_play)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl2
@@ -107,6 +107,79 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 800);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.time_movie);
+            this.panel2.Controls.Add(this.btn_fullscreen);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.volume);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.lbl_maxtime);
+            this.panel2.Controls.Add(this.lbl_currenttime);
+            this.panel2.Controls.Add(this.btn_play);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 723);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(994, 74);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // time_movie
+            // 
+            this.time_movie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.time_movie.BackColor = System.Drawing.Color.Transparent;
+            this.time_movie.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.time_movie.BorderRadius = 10;
+            this.time_movie.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.time_movie.Location = new System.Drawing.Point(118, 22);
+            this.time_movie.MaximumValue = 100;
+            this.time_movie.Name = "time_movie";
+            this.time_movie.Size = new System.Drawing.Size(587, 30);
+            this.time_movie.TabIndex = 20;
+            this.time_movie.Value = 20;
+            this.time_movie.Click += new System.EventHandler(this.time_movie_ValueChanged);
+            // 
+            // volume
+            // 
+            this.volume.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.volume.BackColor = System.Drawing.Color.Transparent;
+            this.volume.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.volume.BorderRadius = 10;
+            this.volume.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
+            this.volume.Location = new System.Drawing.Point(826, 23);
+            this.volume.MaximumValue = 100;
+            this.volume.Name = "volume";
+            this.volume.Size = new System.Drawing.Size(100, 30);
+            this.volume.TabIndex = 16;
+            this.volume.Value = 20;
+            this.volume.ValueChanged += new System.EventHandler(this.volume_ValueChanged);
+            this.volume.Click += new System.EventHandler(this.volume_ValueChanged);
+            // 
+            // lbl_maxtime
+            // 
+            this.lbl_maxtime.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbl_maxtime.AutoSize = true;
+            this.lbl_maxtime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_maxtime.ForeColor = System.Drawing.Color.White;
+            this.lbl_maxtime.Location = new System.Drawing.Point(710, 27);
+            this.lbl_maxtime.Name = "lbl_maxtime";
+            this.lbl_maxtime.Size = new System.Drawing.Size(50, 15);
+            this.lbl_maxtime.TabIndex = 14;
+            this.lbl_maxtime.Text = "1:59:12";
+            // 
+            // lbl_currenttime
+            // 
+            this.lbl_currenttime.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbl_currenttime.AutoSize = true;
+            this.lbl_currenttime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_currenttime.ForeColor = System.Drawing.Color.White;
+            this.lbl_currenttime.Location = new System.Drawing.Point(62, 27);
+            this.lbl_currenttime.Name = "lbl_currenttime";
+            this.lbl_currenttime.Size = new System.Drawing.Size(50, 15);
+            this.lbl_currenttime.TabIndex = 13;
+            this.lbl_currenttime.Text = "1:59:12";
             // 
             // axVLCPlugin21
             // 
@@ -160,6 +233,53 @@
             this.bunifuImageButton3.Zoom = 10;
             this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
+            // btn_fullscreen
+            // 
+            this.btn_fullscreen.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btn_fullscreen.BackColor = System.Drawing.Color.Transparent;
+            this.btn_fullscreen.Image = ((System.Drawing.Image)(resources.GetObject("btn_fullscreen.Image")));
+            this.btn_fullscreen.ImageActive = null;
+            this.btn_fullscreen.Location = new System.Drawing.Point(942, 15);
+            this.btn_fullscreen.Name = "btn_fullscreen";
+            this.btn_fullscreen.Size = new System.Drawing.Size(35, 35);
+            this.btn_fullscreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_fullscreen.TabIndex = 19;
+            this.btn_fullscreen.TabStop = false;
+            this.btn_fullscreen.Zoom = 10;
+            this.btn_fullscreen.Click += new System.EventHandler(this.btn_fullscreen_Click);
+            this.btn_fullscreen.DoubleClick += new System.EventHandler(this.btn_fullscreen_DoubleClick);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Location = new System.Drawing.Point(932, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1, 30);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(771, 19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1, 30);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(783, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // btn_play
             // 
             this.btn_play.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -175,122 +295,6 @@
             this.btn_play.Zoom = 10;
             this.btn_play.Click += new System.EventHandler(this.btn_play_Click);
             // 
-            // lbl_currenttime
-            // 
-            this.lbl_currenttime.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbl_currenttime.AutoSize = true;
-            this.lbl_currenttime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_currenttime.ForeColor = System.Drawing.Color.White;
-            this.lbl_currenttime.Location = new System.Drawing.Point(62, 27);
-            this.lbl_currenttime.Name = "lbl_currenttime";
-            this.lbl_currenttime.Size = new System.Drawing.Size(50, 15);
-            this.lbl_currenttime.TabIndex = 13;
-            this.lbl_currenttime.Text = "1:59:12";
-            // 
-            // lbl_maxtime
-            // 
-            this.lbl_maxtime.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.lbl_maxtime.AutoSize = true;
-            this.lbl_maxtime.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_maxtime.ForeColor = System.Drawing.Color.White;
-            this.lbl_maxtime.Location = new System.Drawing.Point(710, 27);
-            this.lbl_maxtime.Name = "lbl_maxtime";
-            this.lbl_maxtime.Size = new System.Drawing.Size(50, 15);
-            this.lbl_maxtime.TabIndex = 14;
-            this.lbl_maxtime.Text = "1:59:12";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(783, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // volume
-            // 
-            this.volume.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.volume.BackColor = System.Drawing.Color.Transparent;
-            this.volume.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.volume.BorderRadius = 10;
-            this.volume.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.volume.Location = new System.Drawing.Point(826, 23);
-            this.volume.MaximumValue = 100;
-            this.volume.Name = "volume";
-            this.volume.Size = new System.Drawing.Size(100, 30);
-            this.volume.TabIndex = 16;
-            this.volume.Value = 20;
-            this.volume.ValueChanged += new System.EventHandler(this.volume_ValueChanged);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(771, 19);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1, 30);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Location = new System.Drawing.Point(932, 19);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1, 30);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // btn_fullscreen
-            // 
-            this.btn_fullscreen.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btn_fullscreen.BackColor = System.Drawing.Color.Transparent;
-            this.btn_fullscreen.Image = ((System.Drawing.Image)(resources.GetObject("btn_fullscreen.Image")));
-            this.btn_fullscreen.ImageActive = null;
-            this.btn_fullscreen.Location = new System.Drawing.Point(942, 15);
-            this.btn_fullscreen.Name = "btn_fullscreen";
-            this.btn_fullscreen.Size = new System.Drawing.Size(35, 35);
-            this.btn_fullscreen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_fullscreen.TabIndex = 19;
-            this.btn_fullscreen.TabStop = false;
-            this.btn_fullscreen.Zoom = 10;
-            // 
-            // time_movie
-            // 
-            this.time_movie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.time_movie.BackColor = System.Drawing.Color.Transparent;
-            this.time_movie.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.time_movie.BorderRadius = 10;
-            this.time_movie.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(152)))), ((int)(((byte)(0)))));
-            this.time_movie.Location = new System.Drawing.Point(118, 22);
-            this.time_movie.MaximumValue = 100;
-            this.time_movie.Name = "time_movie";
-            this.time_movie.Size = new System.Drawing.Size(587, 30);
-            this.time_movie.TabIndex = 20;
-            this.time_movie.Value = 20;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.time_movie);
-            this.panel2.Controls.Add(this.btn_fullscreen);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.volume);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.lbl_maxtime);
-            this.panel2.Controls.Add(this.lbl_currenttime);
-            this.panel2.Controls.Add(this.btn_play);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 723);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(994, 74);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
             // FrmVLC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,16 +308,16 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axVLCPlugin21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_play)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_fullscreen)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_play)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -195,12 +195,13 @@
             // 
             // dropdown_theloai
             // 
+            this.dropdown_theloai.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.dropdown_theloai.BackColor = System.Drawing.Color.Transparent;
             this.dropdown_theloai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dropdown_theloai.BorderRadius = 0;
             this.dropdown_theloai.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.dropdown_theloai.DisabledColor = System.Drawing.Color.Gray;
-            this.dropdown_theloai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dropdown_theloai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dropdown_theloai.ForeColor = System.Drawing.Color.Black;
             this.dropdown_theloai.Items = new string[] {
         "Truyền hình",
@@ -220,13 +221,14 @@
         "Âm nhạc",
         "Anime"};
             this.dropdown_theloai.Location = new System.Drawing.Point(3, 0);
-            this.dropdown_theloai.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.dropdown_theloai.Margin = new System.Windows.Forms.Padding(0);
             this.dropdown_theloai.Name = "dropdown_theloai";
             this.dropdown_theloai.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(204)))), ((int)(((byte)(46)))));
             this.dropdown_theloai.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.dropdown_theloai.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dropdown_theloai.selectedIndex = 0;
             this.dropdown_theloai.Size = new System.Drawing.Size(158, 62);
-            this.dropdown_theloai.TabIndex = 4;
+            this.dropdown_theloai.TabIndex = 1;
             this.dropdown_theloai.onItemSelected += new System.EventHandler(this.dropdown_theloai_onItemSelected);
             // 
             // btn_tv
@@ -342,7 +344,7 @@
             // 
             this.tb_timkiem.BorderColor = System.Drawing.Color.SeaGreen;
             this.tb_timkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_timkiem.Location = new System.Drawing.Point(691, 13);
+            this.tb_timkiem.Location = new System.Drawing.Point(691, 17);
             this.tb_timkiem.Margin = new System.Windows.Forms.Padding(50, 16, 3, 3);
             this.tb_timkiem.Name = "tb_timkiem";
             this.tb_timkiem.Size = new System.Drawing.Size(169, 26);
@@ -366,13 +368,13 @@
             this.btn_timkiem.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(204)))), ((int)(((byte)(46)))));
             this.btn_timkiem.IdleForecolor = System.Drawing.Color.Black;
             this.btn_timkiem.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(204)))), ((int)(((byte)(46)))));
-            this.btn_timkiem.Location = new System.Drawing.Point(868, 2);
+            this.btn_timkiem.Location = new System.Drawing.Point(868, 3);
             this.btn_timkiem.Margin = new System.Windows.Forms.Padding(5);
             this.btn_timkiem.Name = "btn_timkiem";
             this.btn_timkiem.Size = new System.Drawing.Size(120, 51);
             this.btn_timkiem.TabIndex = 8;
             this.btn_timkiem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click);
+            this.btn_timkiem.Click += new System.EventHandler(this.btn_timkiem_Click_1);
             // 
             // Movie
             // 

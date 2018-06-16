@@ -142,6 +142,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TV_module\TV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TV_module\TV.Designer.cs">
+      <DependentUpon>TV.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +167,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV_module\TV.resx">
+      <DependentUpon>TV.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -248,5 +257,55 @@
   <ItemGroup>
     <None Include="Resources\tv2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\animalplanet.png" />
+    <Content Include="Resources\binhdinh.png" />
+    <Content Include="Resources\binhphuoc1.png" />
+    <Content Include="Resources\car-toon.png" />
+    <Content Include="Resources\Collapse_52px.png" />
+    <Content Include="Resources\discovery.png" />
+    <Content Include="Resources\dulich.png" />
+    <Content Include="Resources\Expand_52px.png" />
+    <Content Include="Resources\fox.png" />
+    <Content Include="Resources\giadinh.png" />
+    <Content Include="Resources\hatinh.png" />
+    <Content Include="Resources\htv1.png" />
+    <Content Include="Resources\htv2.png" />
+    <Content Include="Resources\htv3.png" />
+    <Content Include="Resources\htv4.png" />
+    <Content Include="Resources\htv7hd.png" />
+    <Content Include="Resources\htv9hd.png" />
+    <Content Include="Resources\htvthethao.png" />
+    <Content Include="Resources\hue.png" />
+    <Content Include="Resources\khanhhoa.png" />
+    <Content Include="Resources\kiengiang.png" />
+    <Content Include="Resources\lamdong.png" />
+    <Content Include="Resources\langson.png" />
+    <Content Include="Resources\longan.png" />
+    <Content Include="Resources\mtvviet.png" />
+    <Content Include="Resources\nhac.png" />
+    <Content Include="Resources\Pause_50px.png" />
+    <Content Include="Resources\phimhd.png" />
+    <Content Include="Resources\phunu.png" />
+    <Content Include="Resources\Play_50px.png" />
+    <Content Include="Resources\quangnam.png" />
+    <Content Include="Resources\soctrang.png" />
+    <Content Include="Resources\tayninh.png" />
+    <Content Include="Resources\thuanviethd.png" />
+    <Content Include="Resources\tpcantho.png" />
+    <Content Include="Resources\travinh.png" />
+    <Content Include="Resources\vinhlong1.png" />
+    <Content Include="Resources\vinhlong2.png" />
+    <Content Include="Resources\vtc1.png" />
+    <Content Include="Resources\vtc10.png" />
+    <Content Include="Resources\vtc11.png" />
+    <Content Include="Resources\vtc14.png" />
+    <Content Include="Resources\vtc16.png" />
+    <Content Include="Resources\vtc4.png" />
+    <Content Include="Resources\vtc7.png" />
+    <Content Include="Resources\vtc8.png" />
+    <Content Include="Resources\vtc9.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

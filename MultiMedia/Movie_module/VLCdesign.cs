@@ -52,6 +52,11 @@ namespace MultiMedia.Movie_module
  
         }
 
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
 
