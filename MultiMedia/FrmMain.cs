@@ -143,7 +143,6 @@ namespace MultiMedia
             };
             htmlWeb.UserAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36";
 
-            //radio2.axVLCPlugin.playlist.add("http://talk2.vcdn.vn/hls/c913e93833d3fa1aff0fca6ffe9f2d33/162d29f55cd/htvbch/index.m3u8");
             string _url = "https://vov.vn/RadioPlayer.aspx?c=vov1";
             HtmlAgilityPack.HtmlDocument document = htmlWeb.Load(_url);
             HtmlNode _notechinh = document.DocumentNode.SelectSingleNode("//form[@id='form1']//script");
@@ -153,7 +152,6 @@ namespace MultiMedia
             string str2 = "m3u8";
             linkgoc = linkgoc.Substring(linkgoc.IndexOf(str1), linkgoc.IndexOf(str2) + str2.Length - linkgoc.IndexOf(str1));
             string url = linkgoc;
-            //String url = "https://5a6872aace0ce.streamlock.net/vov3/vov3.stream_aac/playlist.m3u8";
             tv1.axVLCPlugin21.playlist.add(url);
 
             _url = "https://vov.vn/RadioPlayer.aspx?c=vov2";
@@ -188,14 +186,6 @@ namespace MultiMedia
             url = linkgoc;
             tv1.axVLCPlugin21.playlist.add(url);
 
-            _url = "https://vov.vn/RadioPlayer.aspx?c=vov5b";
-            document = htmlWeb.Load(_url);
-            _notechinh = document.DocumentNode.SelectSingleNode("//form[@id='form1']//script");
-            linkgoc = _notechinh.InnerHtml.ToString();
-            linkgoc = linkgoc.Substring(linkgoc.IndexOf(str1), linkgoc.IndexOf(str2) + str2.Length - linkgoc.IndexOf(str1));
-            url = linkgoc;
-            tv1.axVLCPlugin21.playlist.add(url);
-
             _url = "https://vov.vn/RadioPlayer.aspx?c=vovgt";
             document = htmlWeb.Load(_url);
             _notechinh = document.DocumentNode.SelectSingleNode("//form[@id='form1']//script");
@@ -220,13 +210,15 @@ namespace MultiMedia
             url = linkgoc;
             tv1.axVLCPlugin21.playlist.add(url);
 
-            _url = "https://vov.vn/RadioPlayer.aspx?c=vov2477";
-            document = htmlWeb.Load(_url);
-            _notechinh = document.DocumentNode.SelectSingleNode("//form[@id='form1']//script");
-            linkgoc = _notechinh.InnerHtml.ToString();
-            linkgoc = linkgoc.Substring(linkgoc.IndexOf(str1), linkgoc.IndexOf(str2) + str2.Length - linkgoc.IndexOf(str1));
-            url = linkgoc;
-            tv1.axVLCPlugin21.playlist.add(url);
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv1.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv2.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv3.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv4.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv5.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv6.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv7.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv8.smil/playlist.m3u8");
+            tv1.axVLCPlugin21.playlist.add("https://cdn-livestream-live.vtvgiaitri.vn/vtv9.smil/playlist.m3u8");
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)

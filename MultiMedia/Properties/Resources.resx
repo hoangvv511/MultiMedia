@@ -121,40 +121,91 @@
   <data name="red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Forward_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vov4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vov4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="eye2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Forward_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Forward_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vovGTHCM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vovGTHCM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vov1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vov1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="go" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phimbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phimbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="english" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\english.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vov2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vov2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vov5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vov5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Search_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tag2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tag2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vov3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vov3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vovGT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vovGT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tag2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tag2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phimbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phimbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vtv9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vtv9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

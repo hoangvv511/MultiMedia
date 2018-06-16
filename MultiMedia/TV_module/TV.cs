@@ -226,45 +226,89 @@ namespace MultiMedia.TV_module
         {
             axVLCPlugin21.playlist.playItem(41);
         }
-        private int a = 0;
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+
+        private void vov1_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(42);
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
-        {
-            axVLCPlugin21.playlist.playItem(43);
+        private void vov2_Click(object sender, EventArgs e)
+        {          axVLCPlugin21.playlist.playItem(43);
         }
 
-        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        private void vov3_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(44);
         }
 
-        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        private void vov4_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(45);
         }
 
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        private void vov5_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(46);
         }
 
-        private void bunifuImageButton7_Click(object sender, EventArgs e)
+        private void vovgt_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(47);
         }
 
-        private void bunifuImageButton8_Click(object sender, EventArgs e)
+        private void vovgtsg_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(48);
         }
 
-        private void bunifuImageButton9_Click(object sender, EventArgs e)
+        private void vovenglish_Click(object sender, EventArgs e)
         {
             axVLCPlugin21.playlist.playItem(49);
+        }
+
+        private void vtv1_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(50);
+        }
+
+        private void vtv2_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(51);
+        }
+
+        private void vtv3_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(52);
+        }
+
+        private void vtv4_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(53);
+        }
+
+        private void vtv5_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(54);
+        }
+
+        private void vtv6_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(55);
+        }
+
+        private void vtv7_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(56);
+        }
+
+        private void vtv8_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(57);
+        }
+
+        private void vtv9_Click(object sender, EventArgs e)
+        {
+            axVLCPlugin21.playlist.playItem(58);
         }
     }
 }
